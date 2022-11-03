@@ -1,0 +1,137 @@
+:root {
+    --light: rgba(173, 216, 230);
+    --dark: rgba(38, 38, 78)
+  }
+  
+  /* Header & Title Link */
+  header{
+    display:flex;
+    justify-content: center;
+    width:100vw;
+    background: #0dcaf0;
+    box-shadow:  0 0 10px var(--dark);
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px var(--dark);
+    opacity: 0.93;
+    color: white;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /* Body */
+  
+  body {
+    background: url("../images/day.gif") no-repeat;
+    background-size: cover;
+    transition: all .2s ease-in-out;
+  }
+  
+  /* UI */
+  #ui-container{
+    display: flex;
+    justify-content: center;
+  }
+  #ui {
+    background: var(--light);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(44, 50, 53);
+    text-transform: capitalize;
+    opacity: 1;
+    transition: all .2s ease-in-out
+  }
+  
+  /* Search */
+  #search {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  #search-input{
+    border: 1px solid darkgrey
+  }
+  
+  #search-input:hover{
+    box-shadow: 0 0 3px blue
+  }
+  
+  #searchBtn{
+    transition: all .2s ease-in-out;
+    opacity: 1;
+  }
+  
+  #searchBtn:hover{
+    box-shadow: inset 0 0 3px var(--dark);
+  }
+  
+  #searchBtn:active{
+    transform: scale(.95);
+    box-shadow: inset 0 0 10px var(--dark);
+  }
+  
+  /* History  */
+  hr{
+    height:1px;
+    width:85%;
+    border-radius: 6px;
+    align-self:center;
+    background-color: var(--dark);
+    opacity: 1;
+  }
+  
+  #historyBtn{
+    box-shadow: 0 0 5px var(--dark);
+    transition: all .2s ease-in-out;
+    opacity: 1;
+  
+  }
+  
+  #historyBtn:hover{
+    box-shadow: 0 0 10px var(--dark);
+    transform: scale(1.05);
+  }
+  
+  #historyBtn:active{
+    transform: scale(1);
+    box-shadow: 0 0 2px var(--dark)
+  }
+  
+  
+  /* Weather */
+  /* Today */
+  h5{
+    display:inline
+  }
+  
+  #today {
+    border-radius: 6px;
+    background: var(--dark);
+    box-shadow: rgb(44, 50, 53) -5px 5px 10px;
+    color: white;
+    position:relative;
+    top:450px;
+    opacity: 0
+  }
+  
+  #today img{
+    width:150px
+  }
+  
+  
+  /* Forecast */
+  #forecast {
+    color: white;
+    max-width: 97%;
+  }
+  
+  #forecast h2 {
+    font-size: 16pt;
+  }
+  
+  #forecast section {
+    border-radius: 10px 50px;
+    background: var(--dark);
+    box-shadow: rgb(44, 50, 53) -5px 5px 10px;
+    transition: all .2s ease-in-out
+  }
